@@ -92,6 +92,8 @@ def main():
         
     for block in blockchain.chain:
         print(block)
+    blockchain.chain[4].data = "Heelljf"
+    blockchain.mine(blockchain.chain[2])
         
     print(blockchain.isValid())
         
